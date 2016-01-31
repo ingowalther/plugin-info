@@ -67,10 +67,24 @@ class PluginInfoTest extends PHPUnit_Framework_TestCase
         $this->assertEquals('1.0.6', $info->getCurrentVersion());
     }
 
+    public function testTags()
+    {
+        $info = $this->getInfo();
+
+        $this->assertEquals(['foo', 'bar', 'baz'], $info->getTags());
+    }
+
+    public function testDescription()
+    {
+        $info = $this->getInfo();
+
+        $this->assertEquals('Beschreibung', $info->getStoreDescription('de'));
+        $this->assertEquals('Description', $info->getStoreDescription('en'));
+    }
 
 
     /**
-     * @return \PluginInfo\InfoDecorator
+     * @return \Shopware\PluginInfo\InfoDecorator
      */
     private function getInfo()
     {

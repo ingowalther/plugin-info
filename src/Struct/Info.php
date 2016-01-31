@@ -22,4 +22,6 @@ class Info
 
     public $description;
     public $info;
+
+    public $tags;
 }

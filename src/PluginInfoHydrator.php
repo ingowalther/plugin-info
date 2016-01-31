@@ -29,6 +29,8 @@ class PluginInfoHydrator
         $struct->description = isset($pluginData['description']) ? $pluginData['description'] : array();
         $struct->info = isset($pluginData['info']) ? $pluginData['info'] : array();
 
+        $struct->tags = isset($pluginData['tags']) ? $pluginData['tags'] : array();
+
         return $struct;
     }
 

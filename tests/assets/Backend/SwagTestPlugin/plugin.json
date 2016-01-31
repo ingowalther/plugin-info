@@ -21,5 +21,16 @@
         "blacklist": [
             "4.1.4"
         ]
-    }
+    },
+
+    "description": {
+        "de": "Beschreibung",
+        "en": "Description"
+    },
+
+    "tags": [
+        "foo",
+        "bar",
+        "baz"
+    ]
 }

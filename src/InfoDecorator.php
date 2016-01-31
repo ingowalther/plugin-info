@@ -173,4 +173,9 @@ class InfoDecorator
 
         return $this->info->description[$language];
     }
+
+    public function getTags()
+    {
+        return $this->info->tags;
+    }
 }
